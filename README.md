@@ -5,11 +5,11 @@ This is an official PyTorch implementation of "[**DRTNet: Dilated Re-parameteriz
 
 # Introduction
 The design of general object detection backbones is often limited by the trade-off between performance gains and computational complexity, which are tightly coupled. Such coupling leads to operator fragmentation, restricts deployment efficiency, and occasionally causes severe gradient vanishing. In this paper, we introduce a unified framework for backbone reconstruction and optimization, based on the principles of feature transformation equivalence and structural inductive bias. Building upon GRN and LayerScale, we design a convolution-friendly normalization to construct a smooth and compact channel re-calibration mechanism. As an alternative to traditional SE blocks, this method successfully avoids excessive dependency on global context while enhancing generalization stability. Crucially, we propose the Dilated Re-parameterization Block, which integrates re-parameterized large-kernel convolutions with block-wise self-attention to seamlessly combine local inductive biases with long-range dependency modeling. Empirical results reveal that our method effectively resolves the efficiency bottlenecks of high-frequency computational operations. It significantly reduces memory access costs and computational overhead, yielding substantial improvements in both detection accuracy and edge-side deployment efficiency.
-<center> 
-<img src="whole.png" width="20%" height="20%">
-<img src="lkddc.png" width="20%" height="20%">
-<img src="dynamic.png" width="20%" height="20%">
-</center>
+<div align="center">
+  <img src="whole.png" width="28%">
+  <img src="lkddc.png" width="28%">
+  <img src="dynamic.png" width="28%">
+</div>
 
 
 # Notes
