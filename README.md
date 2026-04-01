@@ -87,6 +87,9 @@ bash scripts/train_b_model.sh  # train OverLoCK-B
 > 💡If your **GPU memory** is insufficient during training, you can enable gradient checkpointing by adding the following arguments: ``--grad-checkpoint --ckpt-stg 4 0 0 0``. If you're still experiencing memory issues, you can increase these values, but be aware that this may slow down training speed.
 
 ## 6. Validation
+To Visualize detection, run plot2.py in the folder named detection.
+
+
 To evaluate ```OverLoCK``` on ImageNet-1K, run:
 ```
 MODEL=overlock_xt # overlock_{xt, t, s, b}
