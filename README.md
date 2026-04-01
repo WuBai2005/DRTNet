@@ -11,9 +11,6 @@ The design of general object detection backbones is often limited by the trade-o
 <img src="dynamic.png" width="30%" height="30%">
 </center>
 
-# News
-
-# Image Classification
 
 # Notes
 It's baseline website: [OverLoCK](https://github.com/LMMMEng/OverLoCK).
