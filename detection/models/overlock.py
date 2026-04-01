@@ -14,7 +14,6 @@ try:
     from mmcv.runner import load_checkpoint
 except:
     from mmengine.runner import load_checkpoint
-# from depthwise_conv2d_implicit_gemm import DepthWiseConv2dImplicitGEMM
 
 def clear_memory_cache():
     """清理GPU缓存，降低显存占用"""
