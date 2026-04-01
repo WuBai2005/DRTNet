@@ -6,19 +6,14 @@ This is an official PyTorch implementation of "[**DRTNet: Dilated Re-parameteriz
 # Introduction
 The design of general object detection backbones is often limited by the trade-off between performance gains and computational complexity, which are tightly coupled. Such coupling leads to operator fragmentation, restricts deployment efficiency, and occasionally causes severe gradient vanishing. In this paper, we introduce a unified framework for backbone reconstruction and optimization, based on the principles of feature transformation equivalence and structural inductive bias. Building upon GRN and LayerScale, we design a convolution-friendly normalization to construct a smooth and compact channel re-calibration mechanism. As an alternative to traditional SE blocks, this method successfully avoids excessive dependency on global context while enhancing generalization stability. Crucially, we propose the Dilated Re-parameterization Block, which integrates re-parameterized large-kernel convolutions with block-wise self-attention to seamlessly combine local inductive biases with long-range dependency modeling. Empirical results reveal that our method effectively resolves the efficiency bottlenecks of high-frequency computational operations. It significantly reduces memory access costs and computational overhead, yielding substantial improvements in both detection accuracy and edge-side deployment efficiency.
 <center> 
-<img src="images/whole.png" width="70%" height="auto">
+<img src="whole.png" width="70%" height="auto">
 </center>
 
 # News
-- **Dec. 25, 2025**: **To improve inference speed and reduce memory consumption**, we provide **reparameterized versions of the OverLoCK models with pre-trained weights**. These variants achieve **identical performance to their original counterparts on ImageNet-1K evaluation**. However, if you further fine-tune these reparameterized models, they may yield slightly lower accuracy compared to the original versions. Please choose the model variant during fine-tuning based on memory and accuracy requirements on your side ([More Details](https://github.com/LMMMEng/OverLoCK/blob/81dd7b216e7aa66ff5a95b07021f299dc2d4d14b/models/overlock.py#L941C13-L941C14)).
-  
-- **May. 16, 2025**: A **plug-and-play implementation of the [ContMix Block](models/contmix.py)** is now available.
 
 # Image Classification
 
 ## 1. Requirements
-We highly suggest using our provided dependencies to ensure reproducibility:
-```
 # Environments:
 cuda==12.1
 python==3.10
