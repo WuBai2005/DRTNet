@@ -13,6 +13,10 @@ The design of general object detection backbones is often limited by the trade-o
 
 # Image Classification
 
+# Notes
+It's baseline website: [OverLoCK](https://github.com/LMMMEng/OverLoCK).
+We don't change the name in model, now the RepBlock means LKDDC, OverLoCK means DRTNet, We do some optimazation to make it run quickly and enhance about one point in map and 6 point in bap, but our work has one important bad thing: Detecting edge discontinuities in complex scenarios. It's our main difficulty, our future work will focus on small-scale targets and complex scene recognition.
+
 ## 1. Requirements
 # Environments:
 cuda==12.1
@@ -77,19 +81,9 @@ python3 validate.py \
 --model $MODEL -b 128 \
 --pretrained # or --checkpoint /path/to/checkpoint 
 ```
->💡 To accelerate inference speed, OverLoCK utilizes [**Structural Re-parameterization**](https://github.com/AILab-CVC/UniRepLKNet/tree/main). Please refer to [**here**](https://github.com/LMMMEng/OverLoCK/blob/540bf6ed9cca99eab78fc8ab935b71f2a4aa2a2c/models/overlock.py#L945) for a simple usage instruction.
 
 # Citation
-If you find this project useful for your research, please consider citing:
-```
-@inproceedings{lou2025overlock,
-  title={OverLoCK: An Overview-first-Look-Closely-next ConvNet with Context-Mixing Dynamic Kernels},
-  author={Lou, Meng and Yu, Yizhou},
-  booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  pages={128--138},
-  year={2025}
-}
-```
+
 
 # Dense Predictions
 [Object Detection](detection)  
@@ -97,10 +91,10 @@ If you find this project useful for your research, please consider citing:
 
 # Acknowledgment
 Our implementation is mainly based on the following codebases. We gratefully thank the authors for their wonderful works.  
-> [timm](https://github.com/rwightman/pytorch-image-models), [natten](https://github.com/SHI-Labs/NATTEN), [unireplknet](https://github.com/AILab-CVC/UniRepLKNet), [mmcv](https://github.com/open-mmlab/mmcv), [mmdet](https://github.com/open-mmlab/mmdetection), [mmseg](https://github.com/open-mmlab/mmsegmentation)  
+> [timm](https://github.com/rwightman/pytorch-image-models), [natten](https://github.com/SHI-Labs/NATTEN), [mmcv](https://github.com/open-mmlab/mmcv), [mmdet](https://github.com/open-mmlab/mmdetection), [mmseg](https://github.com/open-mmlab/mmsegmentation), [OverLoCK](https://github.com/LMMMEng/OverLoCK)
 
 # Contact
-If you have any questions, please feel free to [create issues❓](https://github.com/LMMMEng/OverLoCK/issues) or [contact me 📧](lmzmm.0921@gmail.com).
+If you have any questions, welcome to [create issues❓](https://github.com/WuBai2005/DRTNet/issues) or [contact me](2509474356@qq.com) or talk in (https://github.com/LMMMEng/OverLoCK/issues)
 =======
 # DRTNet
 Optimization Model of OverLoCK
