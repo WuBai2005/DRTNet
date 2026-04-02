@@ -15,7 +15,7 @@ pip install mmdet==2.28.2 --no-cache-dir
 
 Prepare COCO 2017 according to the [guidelines](https://github.com/open-mmlab/mmdetection/blob/2.x/docs/en/1_exist_data_model.md). 
 
-## 3. Main Results on COCO using Mask R-CNN framework
+## 3. Pth of Pretrained of OverLock on COCO using Mask R-CNN framework
 
 |    Backbone   |   Pretrain  | Schedule | AP_b | AP_m | Config | Download |
 |:-------------:|:-----------:|:--------:|--------|:-------:|:------:|:----------:|
