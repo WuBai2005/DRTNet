@@ -1,1 +1,0 @@
-from .align_resize import AlignResize
