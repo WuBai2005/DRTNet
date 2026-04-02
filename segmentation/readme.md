@@ -39,11 +39,5 @@ bash scripts/dist_test.sh configs/overlock/upernet_overlock_tiny_ade20k_8xb2.py 
 ## Citation
 If you find this project useful for your research, please consider citing:
 ```
-@inproceedings{lou2025overlock,
-  title={OverLoCK: An Overview-first-Look-Closely-next ConvNet with Context-Mixing Dynamic Kernels},
-  author={Lou, Meng and Yu, Yizhou},
-  booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  pages={128--138},
-  year={2025}
-}
+
 ```
