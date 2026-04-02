@@ -27,9 +27,9 @@ Prepare COCO 2017 according to the [guidelines](https://github.com/open-mmlab/mm
 |               |             |    3x    |51.4       |45.3         |[config](configs/maskrcnn_overlock/mask_rcnn_overlock_b_in1k_fpn_3x_coco.py)        |[model](https://github.com/LMMMEng/OverLoCK/releases/download/v1/maskrcnn3x_overlock_base_coco.pth)          |
 
 ## 4. Train
-To train ``OverLoCK-T + Mask R-CNN 1x`` model on COCO dataset with 8 GPUs (single node), run:
+To train ``DRTNet-T + Mask R-CNN 1x`` model on COCO dataset with 2 GPUs (single node), run:
 ```
-NUM_GPUS=8
+NUM_GPUS=2
 CONFIG=configs/maskrcnn_overlock/mask_rcnn_overlock_t_in1k_fpn_1x_coco.py
 bash scripts/dist_train.sh $CONFIG $NUM_GPUS
 ```
@@ -37,7 +37,7 @@ bash scripts/dist_train.sh $CONFIG $NUM_GPUS
 ## 5. Validation
 To evaluate ``OverLoCK-T + Mask R-CNN 1x`` model on COCO dataset, run:
 ```
-NUM_GPUS=8
+NUM_GPUS=2
 CKPT=path-to-checkpoint.pth
 CONFIG=configs/maskrcnn_overlock/mask_rcnn_overlock_t_in1k_fpn_1x_coco.py
 bash scripts/dist_test.sh $CONFIG $CKPT $NUM_GPUS --eval bbox segm
