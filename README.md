@@ -111,7 +111,7 @@ Our implementation is mainly based on the following codebases. We gratefully tha
 > [timm](https://github.com/rwightman/pytorch-image-models), [natten](https://github.com/SHI-Labs/NATTEN), [mmcv](https://github.com/open-mmlab/mmcv), [mmdet](https://github.com/open-mmlab/mmdetection), [mmseg](https://github.com/open-mmlab/mmsegmentation), [OverLoCK](https://github.com/LMMMEng/OverLoCK)
 
 # Contact
-If you have any questions, welcome to [create issues❓](https://github.com/WuBai2005/DRTNet/issues) or [contact me](2509474356@qq.com) or talk in (https://github.com/LMMMEng/OverLoCK/issues)
+If you have any questions, welcome to [create issues❓](https://github.com/WuBai2005/DRTNet/issues) or talk in (https://github.com/LMMMEng/OverLoCK/issues)
 =======
 # DRTNet
 Optimization Model of OverLoCK
